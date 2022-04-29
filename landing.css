@@ -1,0 +1,164 @@
+header{
+    display: flex;
+    justify-content: space-between;
+ } 
+
+header div{
+    display: flex;
+    font-size: 2rem;
+}
+
+header div p{
+    margin: 0;
+    padding: 0;
+}
+
+header nav{
+    margin: 25px;
+}
+
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#form-holder{
+    text-align: center;
+}
+
+#form-holder p{
+    font-size: 1.5rem;
+}
+
+#form-holder input[type="email"]{
+    /* font-size: 1.1rem; */
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+#form-holder input[type="submit"]{
+    font-size: 1.1rem;
+    width: 150px;
+    background-color: yellow;
+}
+
+#feature{
+    margin: 100px 0;
+}
+
+.profeature{
+    display: flex;
+    margin: 25px 50px;
+
+}
+
+.detailfeature{
+    margin-left: 50px;
+}
+
+.detailfeature p:first-child{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#youtubevideo{
+    text-align: center;
+}
+
+#pricing{
+    margin: 25px 0;
+}
+
+.pricing-info{
+    border: 2px solid silver;
+    width: 300px;
+    text-align: center;
+}
+
+.pricing-info p:first-child{
+    background-color: rgb(99, 99, 99);
+    padding: 10px;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.pricing-info p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pricing-info p {
+    font-size: 1.1rem;
+}
+
+.pricing-info button{
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: black;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+footer {
+    background-color: gray;
+    padding: 5px 10px;
+    margin: 20px 0 0 0;
+    /* width: 100%; */
+}
+
+footer p {
+    text-align: right;
+    color: silver;
+}
+
+footer div:first-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer div:first-child a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    #pricing{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pricing-info {
+        margin:20px 0;
+    }
+
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a{
+        display: block;
+        margin: 10px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    #youtubevideo{
+        width: auto;
+    }
+  }
